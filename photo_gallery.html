@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Homestead Condos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="homepage">
+    <!-- Header -->
+    <div class="header">
+
+      <!-- <header id="header"> -->
+      <!-- <img src="images/homestead_logo.gif" alt="Homestead logo" id="header-image"> -->
+      <div id="logo">
+	<a href="index.html">The Homestead</a>
+      </div>
+      <div id="nav">
+	<ul>
+  	  <li><a href="photo_gallery.html">Photo Gallery</a></li>
+  	  <li><a href="floor_plans_pricing.html">Floor Plans & Pricing</a></li>
+  	  <li><a href="index.html">Pricing</a></li>
+  	  <li><a href="index.html">For Owners</a></li>
+	</ul>
+      </div>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="gallery-section">
+	<h class="bar-title">One Bedroom Condos</h>
+	<div class="previews">
+	  <img onclick="switch_img(this, 'ob');" id="bedroom" src="./images/ob_bedroom.jpg" alt="bedroom"/>
+	  <img onclick="switch_img(this, 'ob');" id="kitchen" src="./images/ob_kitchen.jpg" alt="kitchen"/>
+	  <img onclick="switch_img(this, 'ob');" id="living_room" src="./images/ob_living_room.jpg" alt="living_room"/>
+	</div>
+
+	<div class="enlarged_img">
+	  <img id="ob_large_img" src="./images/ob_bedroom.jpg" alt="living_room"/>
+	</div>
+      </div>
+
+      <div class="gallery-section">
+	<h class="bar-title">Two Bedroom Condos</h>
+	<div class="previews">
+	  <img onclick="switch_img(this, 'tb');" id="bedroom" src="./images/tb_bedroom.jpg" alt="bedroom"/>
+	  <img onclick="switch_img(this, 'tb');" id="kitchen" src="./images/tb_dining_room.jpg" alt="dining room"/>
+	  <img onclick="switch_img(this, 'tb');" id="living_room" src="./images/tb_living_room.jpg" alt="living_room"/>
+	</div>
+
+	<div class="enlarged_img">
+	  <img id="tb_large_img" src="./images/tb_bedroom.jpg" alt="living_room"/>
+	</div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <p> The Homestead Condominiums <br>
+	1415 Agin Court <br>
+	Waukesha, Wisconsin 53824 <br>
+      </p>
+      <p> (262) 227 7181 </p>
+      <p> mholiday@homestead-condos.com </p>
+    </div>
+
+    <script>
+      function switch_img(img, id) {
+      if(id.match("ob")) {
+      document.getElementById("ob_large_img").src=img.src;
+      }
+      else {
+      document.getElementById("tb_large_img").src=img.src;
+      }
+      }
+    </script>
+
+  </body>
+</html>
